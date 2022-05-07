@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<style>body{background-color:white;}</style>
+<link href="data:text/css,%0A%2ERtable1%20table%2C%20table%2ERtable1%20%7B%0Afont%2Dfamily%3A%20%22Arial%22%2C%20Arial%2C%20sans%2Dserif%3B%0Afont%2Dsize%3A%2010pt%3B%0Aborder%2Dcollapse%3A%20collapse%3B%0Apadding%3A%200px%3B%0Amargin%3A%200px%3B%0A%0A%7D%0A%2ERtable1%20td%20%7B%0Awhite%2Dspace%3Anowrap%3B%0A%7D%0A%2ERtable1%20th%2C%20%2ERtable1%20td%20%7B%0Aborder%3A%200%3B%0Atext%2Dalign%3A%20center%3B%0Apadding%3A%200%2E5ex%201%2E5ex%3B%0Amargin%3A%200px%3B%0A%7D%0A%2ERtable1%20thead%3Etr%3Afirst%2Dchild%3Eth%20%7B%0Aborder%2Dtop%3A%202pt%20solid%20black%3B%0A%7D%0A%2ERtable1%20thead%3Etr%3Alast%2Dchild%3Eth%20%7B%0Aborder%2Dbottom%3A%201pt%20solid%20black%3B%0A%7D%0A%2ERtable1%20tbody%3Etr%3Alast%2Dchild%3Etd%20%7B%0Aborder%2Dbottom%3A%202pt%20solid%20black%3B%0A%7D%0A%2ERtable1%20th%2Egrouplabel%20%7B%0Apadding%2Dleft%3A%200%3B%0Apadding%2Dright%3A%200%3B%0A%7D%0A%2ERtable1%20th%2Egrouplabel%3Ediv%20%7B%0Amargin%2Dleft%3A%201%2E5ex%3B%0Amargin%2Dright%3A%201%2E5ex%3B%0Aborder%2Dbottom%3A%201pt%20solid%20black%3B%0A%7D%0A%2ERtable1%20th%2Egrouplabel%3Alast%2Dchild%3Ediv%20%7B%0Amargin%2Dright%3A%200%3B%0A%7D%0A%2ERtable1%20%2Erowlabel%20%7B%0Atext%2Dalign%3A%20left%3B%0Apadding%2Dleft%3A%202%2E5ex%3B%0A%7D%0A%2ERtable1%20%2Efirstrow%2Erowlabel%20%7B%0Apadding%2Dleft%3A%200%2E5ex%3B%0Afont%2Dweight%3A%20bold%3B%0A%7D%0A%0A%2ERtable1%2Dzebra%20tbody%20tr%3Anth%2Dchild%28odd%29%20%7B%0Abackground%2Dcolor%3A%20%23eee%3B%0A%7D%0A%0Atable%2ERtable1%2Dtimes%20%7B%0Afont%2Dfamily%3A%20%22Times%20New%20Roman%22%2C%20Times%2C%20serif%3B%0A%7D%0A%0A%2ERtable1%2Dshade%20th%20%7B%0Abackground%2Dcolor%3A%20%23ccc%3B%0A%7D%0A%0A%2ERtable1%2Dgrid%20th%2C%20%2ERtable1%2Dgrid%20td%20%7B%0Aborder%2Dleft%3A%201pt%20solid%20black%3B%0Aborder%2Dright%3A%201pt%20solid%20black%3B%0A%7D%0A%2ERtable1%2Dgrid%20thead%3Etr%3Afirst%2Dchild%3Eth%20%7B%0Aborder%2Dtop%3A%201pt%20solid%20black%3B%0A%7D%0A%2ERtable1%2Dgrid%20thead%3Etr%3Alast%2Dchild%3Eth%20%7B%0Aborder%2Dbottom%3A%201pt%20solid%20black%3B%0A%7D%0A%2ERtable1%2Dgrid%20tbody%3Etr%3Alast%2Dchild%3Etd%20%7B%0Aborder%2Dbottom%3A%201pt%20solid%20black%3B%0A%7D%0A%2ERtable1%2Dgrid%20%2Efirstrow%2C%20%2ERtable1%2Dgrid%20%2Efirstrow%20%7E%20td%20%7B%0Aborder%2Dtop%3A%201pt%20solid%20black%3B%0A%7D%0A%2ERtable1%2Dgrid%20th%2Egrouplabel%3Ediv%20%7B%0Amargin%2Dleft%3A%200%3B%0Amargin%2Dright%3A%200%3B%0Aborder%2Dbottom%3A%200%3B%0A%7D%0A%0A%2ERtable1%2Dcenter%20td%2Erowlabel%2C%20%2ERtable1%2Dcenter%20td%2Efirstrow%2Erowlabel%20%7B%0Afont%2Dweight%3A%20bold%3B%0Atext%2Dalign%3A%20center%3B%0Apadding%3A%200%2E5ex%201%2E5ex%3B%0A%7D%0A%0A%2ERtable1%20%2ERtable1%2Dfootnote%20%7B%0Afont%2Dsize%3A%20smaller%3B%0Apadding%3A%200px%3B%0Amargin%3A%200px%3B%0Atext%2Dalign%3A%20left%3B%0A%7D%0A" rel="stylesheet" />
+
+</head>
+<body>
+<div class="Rtable1"><table class="Rtable1">
+<thead>
+<tr>
+<th class="rowlabel firstrow lastrow"></th>
+<th class="firstrow lastrow"><span class="stratlabel">Black North American<br><span class="stratn">(N=14067)</span></span></th>
+<th class="firstrow lastrow"><span class="stratlabel">Black_African<br><span class="stratn">(N=979)</span></span></th>
+<th class="firstrow lastrow"><span class="stratlabel">Black West Indian<br><span class="stratn">(N=36)</span></span></th>
+<th class="firstrow lastrow"><span class="stratlabel">Black Central South American<br><span class="stratn">(N=44)</span></span></th>
+<th class="firstrow lastrow"><span class="stratlabel">Black_European<br><span class="stratn">(N=238)</span></span></th>
+<th class="firstrow lastrow"><span class="stratlabel">Other_Black<br><span class="stratn">(N=2912)</span></span></th>
+<th class="firstrow lastrow"><span class="stratlabel">Korean<br><span class="stratn">(N=789)</span></span></th>
+<th class="firstrow lastrow"><span class="stratlabel">Japanese<br><span class="stratn">(N=1499)</span></span></th>
+<th class="firstrow lastrow"><span class="stratlabel">Other Asian<br><span class="stratn">(N=12160)</span></span></th>
+<th class="firstrow lastrow"><span class="stratlabel">Mexican<br><span class="stratn">(N=2102)</span></span></th>
+<th class="firstrow lastrow"><span class="stratlabel">Puerto_Rican<br><span class="stratn">(N=1108)</span></span></th>
+<th class="firstrow lastrow"><span class="stratlabel">Cuban<br><span class="stratn">(N=1801)</span></span></th>
+<th class="firstrow lastrow"><span class="stratlabel">Central American Hispanic<br><span class="stratn">(N=1788)</span></span></th>
+<th class="firstrow lastrow"><span class="stratlabel">South_American_Hispanic<br><span class="stratn">(N=1600)</span></span></th>
+<th class="firstrow lastrow"><span class="stratlabel">Other Hispanic<br><span class="stratn">(N=1969)</span></span></th>
+<th class="firstrow lastrow"><span class="stratlabel">Overall<br><span class="stratn">(N=213428)</span></span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="rowlabel firstrow">Disability Self-Care</td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+</tr>
+<tr>
+<td class="rowlabel">Yes</td>
+<td>1405 (10.0%)</td>
+<td>55 (5.6%)</td>
+<td>3 (8.3%)</td>
+<td>2 (4.5%)</td>
+<td>13 (5.5%)</td>
+<td>106 (3.6%)</td>
+<td>54 (6.8%)</td>
+<td>57 (3.8%)</td>
+<td>595 (4.9%)</td>
+<td>166 (7.9%)</td>
+<td>83 (7.5%)</td>
+<td>57 (3.2%)</td>
+<td>48 (2.7%)</td>
+<td>134 (8.4%)</td>
+<td>74 (3.8%)</td>
+<td>13161 (6.2%)</td>
+</tr>
+<tr>
+<td class="rowlabel lastrow">No</td>
+<td class="lastrow">12662 (90.0%)</td>
+<td class="lastrow">924 (94.4%)</td>
+<td class="lastrow">33 (91.7%)</td>
+<td class="lastrow">42 (95.5%)</td>
+<td class="lastrow">225 (94.5%)</td>
+<td class="lastrow">2806 (96.4%)</td>
+<td class="lastrow">735 (93.2%)</td>
+<td class="lastrow">1442 (96.2%)</td>
+<td class="lastrow">11565 (95.1%)</td>
+<td class="lastrow">1936 (92.1%)</td>
+<td class="lastrow">1025 (92.5%)</td>
+<td class="lastrow">1744 (96.8%)</td>
+<td class="lastrow">1740 (97.3%)</td>
+<td class="lastrow">1466 (91.6%)</td>
+<td class="lastrow">1895 (96.2%)</td>
+<td class="lastrow">200267 (93.8%)</td>
+</tr>
+<tr>
+<td class="rowlabel firstrow">Disability Independent Living</td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+</tr>
+<tr>
+<td class="rowlabel">Yes</td>
+<td>2054 (14.6%)</td>
+<td>90 (9.2%)</td>
+<td>3 (8.3%)</td>
+<td>4 (9.1%)</td>
+<td>27 (11.3%)</td>
+<td>190 (6.5%)</td>
+<td>96 (12.2%)</td>
+<td>118 (7.9%)</td>
+<td>969 (8.0%)</td>
+<td>278 (13.2%)</td>
+<td>123 (11.1%)</td>
+<td>98 (5.4%)</td>
+<td>89 (5.0%)</td>
+<td>184 (11.5%)</td>
+<td>137 (7.0%)</td>
+<td>21315 (10.0%)</td>
+</tr>
+<tr>
+<td class="rowlabel lastrow">No</td>
+<td class="lastrow">12013 (85.4%)</td>
+<td class="lastrow">889 (90.8%)</td>
+<td class="lastrow">33 (91.7%)</td>
+<td class="lastrow">40 (90.9%)</td>
+<td class="lastrow">211 (88.7%)</td>
+<td class="lastrow">2722 (93.5%)</td>
+<td class="lastrow">693 (87.8%)</td>
+<td class="lastrow">1381 (92.1%)</td>
+<td class="lastrow">11191 (92.0%)</td>
+<td class="lastrow">1824 (86.8%)</td>
+<td class="lastrow">985 (88.9%)</td>
+<td class="lastrow">1703 (94.6%)</td>
+<td class="lastrow">1699 (95.0%)</td>
+<td class="lastrow">1416 (88.5%)</td>
+<td class="lastrow">1832 (93.0%)</td>
+<td class="lastrow">192113 (90.0%)</td>
+</tr>
+<tr>
+<td class="rowlabel firstrow">Disability Cognitive Thinking</td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+</tr>
+<tr>
+<td class="rowlabel">Yes</td>
+<td>1645 (11.7%)</td>
+<td>63 (6.4%)</td>
+<td>4 (11.1%)</td>
+<td>6 (13.6%)</td>
+<td>32 (13.4%)</td>
+<td>111 (3.8%)</td>
+<td>71 (9.0%)</td>
+<td>81 (5.4%)</td>
+<td>764 (6.3%)</td>
+<td>260 (12.4%)</td>
+<td>102 (9.2%)</td>
+<td>72 (4.0%)</td>
+<td>60 (3.4%)</td>
+<td>151 (9.4%)</td>
+<td>90 (4.6%)</td>
+<td>16308 (7.6%)</td>
+</tr>
+<tr>
+<td class="rowlabel lastrow">No</td>
+<td class="lastrow">12422 (88.3%)</td>
+<td class="lastrow">916 (93.6%)</td>
+<td class="lastrow">32 (88.9%)</td>
+<td class="lastrow">38 (86.4%)</td>
+<td class="lastrow">206 (86.6%)</td>
+<td class="lastrow">2801 (96.2%)</td>
+<td class="lastrow">718 (91.0%)</td>
+<td class="lastrow">1418 (94.6%)</td>
+<td class="lastrow">11396 (93.7%)</td>
+<td class="lastrow">1842 (87.6%)</td>
+<td class="lastrow">1006 (90.8%)</td>
+<td class="lastrow">1729 (96.0%)</td>
+<td class="lastrow">1728 (96.6%)</td>
+<td class="lastrow">1449 (90.6%)</td>
+<td class="lastrow">1879 (95.4%)</td>
+<td class="lastrow">197120 (92.4%)</td>
+</tr>
+<tr>
+<td class="rowlabel firstrow">Disability Vision</td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+</tr>
+<tr>
+<td class="rowlabel">Yes</td>
+<td>878 (6.2%)</td>
+<td>42 (4.3%)</td>
+<td>1 (2.8%)</td>
+<td>1 (2.3%)</td>
+<td>12 (5.0%)</td>
+<td>49 (1.7%)</td>
+<td>21 (2.7%)</td>
+<td>38 (2.5%)</td>
+<td>503 (4.1%)</td>
+<td>146 (6.9%)</td>
+<td>52 (4.7%)</td>
+<td>64 (3.6%)</td>
+<td>71 (4.0%)</td>
+<td>69 (4.3%)</td>
+<td>43 (2.2%)</td>
+<td>8659 (4.1%)</td>
+</tr>
+<tr>
+<td class="rowlabel lastrow">No</td>
+<td class="lastrow">13189 (93.8%)</td>
+<td class="lastrow">937 (95.7%)</td>
+<td class="lastrow">35 (97.2%)</td>
+<td class="lastrow">43 (97.7%)</td>
+<td class="lastrow">226 (95.0%)</td>
+<td class="lastrow">2863 (98.3%)</td>
+<td class="lastrow">768 (97.3%)</td>
+<td class="lastrow">1461 (97.5%)</td>
+<td class="lastrow">11657 (95.9%)</td>
+<td class="lastrow">1956 (93.1%)</td>
+<td class="lastrow">1056 (95.3%)</td>
+<td class="lastrow">1737 (96.4%)</td>
+<td class="lastrow">1717 (96.0%)</td>
+<td class="lastrow">1531 (95.7%)</td>
+<td class="lastrow">1926 (97.8%)</td>
+<td class="lastrow">204769 (95.9%)</td>
+</tr>
+<tr>
+<td class="rowlabel firstrow">Disability Hearing</td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+</tr>
+<tr>
+<td class="rowlabel">Yes</td>
+<td>679 (4.8%)</td>
+<td>37 (3.8%)</td>
+<td>1 (2.8%)</td>
+<td>2 (4.5%)</td>
+<td>6 (2.5%)</td>
+<td>112 (3.8%)</td>
+<td>54 (6.8%)</td>
+<td>50 (3.3%)</td>
+<td>622 (5.1%)</td>
+<td>122 (5.8%)</td>
+<td>53 (4.8%)</td>
+<td>55 (3.1%)</td>
+<td>54 (3.0%)</td>
+<td>103 (6.4%)</td>
+<td>102 (5.2%)</td>
+<td>16101 (7.5%)</td>
+</tr>
+<tr>
+<td class="rowlabel lastrow">No</td>
+<td class="lastrow">13388 (95.2%)</td>
+<td class="lastrow">942 (96.2%)</td>
+<td class="lastrow">35 (97.2%)</td>
+<td class="lastrow">42 (95.5%)</td>
+<td class="lastrow">232 (97.5%)</td>
+<td class="lastrow">2800 (96.2%)</td>
+<td class="lastrow">735 (93.2%)</td>
+<td class="lastrow">1449 (96.7%)</td>
+<td class="lastrow">11538 (94.9%)</td>
+<td class="lastrow">1980 (94.2%)</td>
+<td class="lastrow">1055 (95.2%)</td>
+<td class="lastrow">1746 (96.9%)</td>
+<td class="lastrow">1734 (97.0%)</td>
+<td class="lastrow">1497 (93.6%)</td>
+<td class="lastrow">1867 (94.8%)</td>
+<td class="lastrow">197327 (92.5%)</td>
+</tr>
+<tr>
+<td class="rowlabel firstrow">AGE</td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+</tr>
+<tr>
+<td class="rowlabel">Mean (SD)</td>
+<td>60.2 (12.4)</td>
+<td>59.5 (12.7)</td>
+<td>57.8 (11.1)</td>
+<td>61.8 (14.0)</td>
+<td>56.9 (12.0)</td>
+<td>58.9 (12.9)</td>
+<td>64.4 (14.1)</td>
+<td>55.8 (11.4)</td>
+<td>56.3 (12.2)</td>
+<td>57.9 (12.5)</td>
+<td>60.6 (13.7)</td>
+<td>54.6 (11.5)</td>
+<td>56.9 (12.1)</td>
+<td>58.5 (12.9)</td>
+<td>59.0 (12.4)</td>
+<td>61.4 (12.9)</td>
+</tr>
+<tr>
+<td class="rowlabel lastrow">Median [Min, Max]</td>
+<td class="lastrow">59.0 [40.0, 95.0]</td>
+<td class="lastrow">58.0 [40.0, 95.0]</td>
+<td class="lastrow">58.0 [40.0, 82.0]</td>
+<td class="lastrow">60.5 [40.0, 94.0]</td>
+<td class="lastrow">55.0 [40.0, 94.0]</td>
+<td class="lastrow">57.0 [40.0, 96.0]</td>
+<td class="lastrow">64.0 [40.0, 96.0]</td>
+<td class="lastrow">54.0 [40.0, 96.0]</td>
+<td class="lastrow">54.0 [40.0, 95.0]</td>
+<td class="lastrow">56.0 [40.0, 95.0]</td>
+<td class="lastrow">58.0 [40.0, 95.0]</td>
+<td class="lastrow">53.0 [40.0, 95.0]</td>
+<td class="lastrow">55.0 [40.0, 95.0]</td>
+<td class="lastrow">57.0 [40.0, 95.0]</td>
+<td class="lastrow">58.0 [40.0, 94.0]</td>
+<td class="lastrow">61.0 [40.0, 96.0]</td>
+</tr>
+<tr>
+<td class="rowlabel firstrow">SEX</td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+</tr>
+<tr>
+<td class="rowlabel">Mean (SD)</td>
+<td>1.54 (0.499)</td>
+<td>1.56 (0.497)</td>
+<td>1.53 (0.506)</td>
+<td>1.70 (0.462)</td>
+<td>1.64 (0.481)</td>
+<td>1.56 (0.496)</td>
+<td>1.58 (0.493)</td>
+<td>1.51 (0.500)</td>
+<td>1.51 (0.500)</td>
+<td>1.53 (0.499)</td>
+<td>1.51 (0.500)</td>
+<td>1.52 (0.500)</td>
+<td>1.57 (0.496)</td>
+<td>1.52 (0.500)</td>
+<td>1.61 (0.488)</td>
+<td>1.52 (0.499)</td>
+</tr>
+<tr>
+<td class="rowlabel lastrow">Median [Min, Max]</td>
+<td class="lastrow">2.00 [1.00, 2.00]</td>
+<td class="lastrow">2.00 [1.00, 2.00]</td>
+<td class="lastrow">2.00 [1.00, 2.00]</td>
+<td class="lastrow">2.00 [1.00, 2.00]</td>
+<td class="lastrow">2.00 [1.00, 2.00]</td>
+<td class="lastrow">2.00 [1.00, 2.00]</td>
+<td class="lastrow">2.00 [1.00, 2.00]</td>
+<td class="lastrow">2.00 [1.00, 2.00]</td>
+<td class="lastrow">2.00 [1.00, 2.00]</td>
+<td class="lastrow">2.00 [1.00, 2.00]</td>
+<td class="lastrow">2.00 [1.00, 2.00]</td>
+<td class="lastrow">2.00 [1.00, 2.00]</td>
+<td class="lastrow">2.00 [1.00, 2.00]</td>
+<td class="lastrow">2.00 [1.00, 2.00]</td>
+<td class="lastrow">2.00 [1.00, 2.00]</td>
+<td class="lastrow">2.00 [1.00, 2.00]</td>
+</tr>
+<tr>
+<td class="rowlabel firstrow">Married</td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+</tr>
+<tr>
+<td class="rowlabel">Mean (SD)</td>
+<td>0.389 (0.488)</td>
+<td>0.515 (0.500)</td>
+<td>0.500 (0.507)</td>
+<td>0.364 (0.487)</td>
+<td>0.319 (0.467)</td>
+<td>0.768 (0.422)</td>
+<td>0.653 (0.476)</td>
+<td>0.712 (0.453)</td>
+<td>0.624 (0.484)</td>
+<td>0.517 (0.500)</td>
+<td>0.580 (0.494)</td>
+<td>0.606 (0.489)</td>
+<td>0.652 (0.476)</td>
+<td>0.549 (0.498)</td>
+<td>0.700 (0.458)</td>
+<td>0.620 (0.486)</td>
+</tr>
+<tr>
+<td class="rowlabel lastrow">Median [Min, Max]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">1.00 [0, 1.00]</td>
+<td class="lastrow">0.500 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">1.00 [0, 1.00]</td>
+<td class="lastrow">1.00 [0, 1.00]</td>
+<td class="lastrow">1.00 [0, 1.00]</td>
+<td class="lastrow">1.00 [0, 1.00]</td>
+<td class="lastrow">1.00 [0, 1.00]</td>
+<td class="lastrow">1.00 [0, 1.00]</td>
+<td class="lastrow">1.00 [0, 1.00]</td>
+<td class="lastrow">1.00 [0, 1.00]</td>
+<td class="lastrow">1.00 [0, 1.00]</td>
+<td class="lastrow">1.00 [0, 1.00]</td>
+<td class="lastrow">1.00 [0, 1.00]</td>
+</tr>
+<tr>
+<td class="rowlabel firstrow">Seperated/Divorced</td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+</tr>
+<tr>
+<td class="rowlabel">Mean (SD)</td>
+<td>0.230 (0.421)</td>
+<td>0.209 (0.407)</td>
+<td>0.167 (0.378)</td>
+<td>0.136 (0.347)</td>
+<td>0.298 (0.458)</td>
+<td>0.0907 (0.287)</td>
+<td>0.108 (0.310)</td>
+<td>0.0981 (0.298)</td>
+<td>0.167 (0.373)</td>
+<td>0.208 (0.406)</td>
+<td>0.185 (0.388)</td>
+<td>0.162 (0.369)</td>
+<td>0.180 (0.384)</td>
+<td>0.193 (0.395)</td>
+<td>0.106 (0.307)</td>
+<td>0.163 (0.369)</td>
+</tr>
+<tr>
+<td class="rowlabel lastrow">Median [Min, Max]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+</tr>
+<tr>
+<td class="rowlabel firstrow">Widowed</td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+</tr>
+<tr>
+<td class="rowlabel">Mean (SD)</td>
+<td>0.112 (0.315)</td>
+<td>0.0858 (0.280)</td>
+<td>0.0833 (0.280)</td>
+<td>0.114 (0.321)</td>
+<td>0.0924 (0.290)</td>
+<td>0.0725 (0.259)</td>
+<td>0.113 (0.317)</td>
+<td>0.0720 (0.259)</td>
+<td>0.0679 (0.252)</td>
+<td>0.0799 (0.271)</td>
+<td>0.104 (0.305)</td>
+<td>0.0589 (0.235)</td>
+<td>0.0604 (0.238)</td>
+<td>0.0831 (0.276)</td>
+<td>0.0868 (0.282)</td>
+<td>0.100 (0.301)</td>
+</tr>
+<tr>
+<td class="rowlabel lastrow">Median [Min, Max]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+</tr>
+<tr>
+<td class="rowlabel firstrow">Never Married/Single</td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+</tr>
+<tr>
+<td class="rowlabel">Mean (SD)</td>
+<td>0.269 (0.444)</td>
+<td>0.190 (0.392)</td>
+<td>0.250 (0.439)</td>
+<td>0.386 (0.493)</td>
+<td>0.290 (0.455)</td>
+<td>0.0687 (0.253)</td>
+<td>0.127 (0.333)</td>
+<td>0.118 (0.323)</td>
+<td>0.141 (0.348)</td>
+<td>0.196 (0.397)</td>
+<td>0.131 (0.337)</td>
+<td>0.173 (0.378)</td>
+<td>0.108 (0.310)</td>
+<td>0.175 (0.380)</td>
+<td>0.108 (0.310)</td>
+<td>0.117 (0.321)</td>
+</tr>
+<tr>
+<td class="rowlabel lastrow">Median [Min, Max]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+</tr>
+<tr>
+<td class="rowlabel firstrow">Northeast Region</td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+</tr>
+<tr>
+<td class="rowlabel">Yes</td>
+<td>1896 (13.5%)</td>
+<td>508 (51.9%)</td>
+<td>26 (72.2%)</td>
+<td>13 (29.5%)</td>
+<td>24 (10.1%)</td>
+<td>801 (27.5%)</td>
+<td>63 (8.0%)</td>
+<td>278 (18.5%)</td>
+<td>263 (2.2%)</td>
+<td>1034 (49.2%)</td>
+<td>119 (10.7%)</td>
+<td>290 (16.1%)</td>
+<td>591 (33.1%)</td>
+<td>272 (17.0%)</td>
+<td>224 (11.4%)</td>
+<td>40147 (18.8%)</td>
+</tr>
+<tr>
+<td class="rowlabel lastrow">No</td>
+<td class="lastrow">12171 (86.5%)</td>
+<td class="lastrow">471 (48.1%)</td>
+<td class="lastrow">10 (27.8%)</td>
+<td class="lastrow">31 (70.5%)</td>
+<td class="lastrow">214 (89.9%)</td>
+<td class="lastrow">2111 (72.5%)</td>
+<td class="lastrow">726 (92.0%)</td>
+<td class="lastrow">1221 (81.5%)</td>
+<td class="lastrow">11897 (97.8%)</td>
+<td class="lastrow">1068 (50.8%)</td>
+<td class="lastrow">989 (89.3%)</td>
+<td class="lastrow">1511 (83.9%)</td>
+<td class="lastrow">1197 (66.9%)</td>
+<td class="lastrow">1328 (83.0%)</td>
+<td class="lastrow">1745 (88.6%)</td>
+<td class="lastrow">173281 (81.2%)</td>
+</tr>
+<tr>
+<td class="rowlabel firstrow">Midwest Region</td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+</tr>
+<tr>
+<td class="rowlabel">Yes</td>
+<td>2608 (18.5%)</td>
+<td>29 (3.0%)</td>
+<td>1 (2.8%)</td>
+<td>5 (11.4%)</td>
+<td>52 (21.8%)</td>
+<td>183 (6.3%)</td>
+<td>41 (5.2%)</td>
+<td>184 (12.3%)</td>
+<td>1262 (10.4%)</td>
+<td>208 (9.9%)</td>
+<td>47 (4.2%)</td>
+<td>105 (5.8%)</td>
+<td>92 (5.1%)</td>
+<td>127 (7.9%)</td>
+<td>169 (8.6%)</td>
+<td>53139 (24.9%)</td>
+</tr>
+<tr>
+<td class="rowlabel lastrow">No</td>
+<td class="lastrow">11459 (81.5%)</td>
+<td class="lastrow">950 (97.0%)</td>
+<td class="lastrow">35 (97.2%)</td>
+<td class="lastrow">39 (88.6%)</td>
+<td class="lastrow">186 (78.2%)</td>
+<td class="lastrow">2729 (93.7%)</td>
+<td class="lastrow">748 (94.8%)</td>
+<td class="lastrow">1315 (87.7%)</td>
+<td class="lastrow">10898 (89.6%)</td>
+<td class="lastrow">1894 (90.1%)</td>
+<td class="lastrow">1061 (95.8%)</td>
+<td class="lastrow">1696 (94.2%)</td>
+<td class="lastrow">1696 (94.9%)</td>
+<td class="lastrow">1473 (92.1%)</td>
+<td class="lastrow">1800 (91.4%)</td>
+<td class="lastrow">160289 (75.1%)</td>
+</tr>
+<tr>
+<td class="rowlabel firstrow">South Region</td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+</tr>
+<tr>
+<td class="rowlabel">Yes</td>
+<td>8177 (58.1%)</td>
+<td>405 (41.4%)</td>
+<td>8 (22.2%)</td>
+<td>21 (47.7%)</td>
+<td>140 (58.8%)</td>
+<td>388 (13.3%)</td>
+<td>57 (7.2%)</td>
+<td>333 (22.2%)</td>
+<td>3884 (31.9%)</td>
+<td>673 (32.0%)</td>
+<td>829 (74.8%)</td>
+<td>657 (36.5%)</td>
+<td>804 (45.0%)</td>
+<td>490 (30.6%)</td>
+<td>277 (14.1%)</td>
+<td>71509 (33.5%)</td>
+</tr>
+<tr>
+<td class="rowlabel lastrow">No</td>
+<td class="lastrow">5890 (41.9%)</td>
+<td class="lastrow">574 (58.6%)</td>
+<td class="lastrow">28 (77.8%)</td>
+<td class="lastrow">23 (52.3%)</td>
+<td class="lastrow">98 (41.2%)</td>
+<td class="lastrow">2524 (86.7%)</td>
+<td class="lastrow">732 (92.8%)</td>
+<td class="lastrow">1166 (77.8%)</td>
+<td class="lastrow">8276 (68.1%)</td>
+<td class="lastrow">1429 (68.0%)</td>
+<td class="lastrow">279 (25.2%)</td>
+<td class="lastrow">1144 (63.5%)</td>
+<td class="lastrow">984 (55.0%)</td>
+<td class="lastrow">1110 (69.4%)</td>
+<td class="lastrow">1692 (85.9%)</td>
+<td class="lastrow">141919 (66.5%)</td>
+</tr>
+<tr>
+<td class="rowlabel firstrow">West Region</td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+</tr>
+<tr>
+<td class="rowlabel">Yes</td>
+<td>1386 (9.9%)</td>
+<td>37 (3.8%)</td>
+<td>1 (2.8%)</td>
+<td>5 (11.4%)</td>
+<td>22 (9.2%)</td>
+<td>1540 (52.9%)</td>
+<td>628 (79.6%)</td>
+<td>704 (47.0%)</td>
+<td>6751 (55.5%)</td>
+<td>187 (8.9%)</td>
+<td>113 (10.2%)</td>
+<td>749 (41.6%)</td>
+<td>301 (16.8%)</td>
+<td>711 (44.4%)</td>
+<td>1299 (66.0%)</td>
+<td>48633 (22.8%)</td>
+</tr>
+<tr>
+<td class="rowlabel lastrow">No</td>
+<td class="lastrow">12681 (90.1%)</td>
+<td class="lastrow">942 (96.2%)</td>
+<td class="lastrow">35 (97.2%)</td>
+<td class="lastrow">39 (88.6%)</td>
+<td class="lastrow">216 (90.8%)</td>
+<td class="lastrow">1372 (47.1%)</td>
+<td class="lastrow">161 (20.4%)</td>
+<td class="lastrow">795 (53.0%)</td>
+<td class="lastrow">5409 (44.5%)</td>
+<td class="lastrow">1915 (91.1%)</td>
+<td class="lastrow">995 (89.8%)</td>
+<td class="lastrow">1052 (58.4%)</td>
+<td class="lastrow">1487 (83.2%)</td>
+<td class="lastrow">889 (55.6%)</td>
+<td class="lastrow">670 (34.0%)</td>
+<td class="lastrow">164795 (77.2%)</td>
+</tr>
+<tr>
+<td class="rowlabel firstrow">Less Than High School Diploma</td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+</tr>
+<tr>
+<td class="rowlabel">Yes</td>
+<td>2113 (15.0%)</td>
+<td>178 (18.2%)</td>
+<td>7 (19.4%)</td>
+<td>8 (18.2%)</td>
+<td>48 (20.2%)</td>
+<td>573 (19.7%)</td>
+<td>40 (5.1%)</td>
+<td>339 (22.6%)</td>
+<td>4781 (39.3%)</td>
+<td>459 (21.8%)</td>
+<td>217 (19.6%)</td>
+<td>774 (43.0%)</td>
+<td>254 (14.2%)</td>
+<td>332 (20.8%)</td>
+<td>132 (6.7%)</td>
+<td>23422 (11.0%)</td>
+</tr>
+<tr>
+<td class="rowlabel lastrow">No</td>
+<td class="lastrow">11954 (85.0%)</td>
+<td class="lastrow">801 (81.8%)</td>
+<td class="lastrow">29 (80.6%)</td>
+<td class="lastrow">36 (81.8%)</td>
+<td class="lastrow">190 (79.8%)</td>
+<td class="lastrow">2339 (80.3%)</td>
+<td class="lastrow">749 (94.9%)</td>
+<td class="lastrow">1160 (77.4%)</td>
+<td class="lastrow">7379 (60.7%)</td>
+<td class="lastrow">1643 (78.2%)</td>
+<td class="lastrow">891 (80.4%)</td>
+<td class="lastrow">1027 (57.0%)</td>
+<td class="lastrow">1534 (85.8%)</td>
+<td class="lastrow">1268 (79.3%)</td>
+<td class="lastrow">1837 (93.3%)</td>
+<td class="lastrow">190006 (89.0%)</td>
+</tr>
+<tr>
+<td class="rowlabel firstrow">High School Diploma</td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+</tr>
+<tr>
+<td class="rowlabel">Yes</td>
+<td>4435 (31.5%)</td>
+<td>275 (28.1%)</td>
+<td>10 (27.8%)</td>
+<td>8 (18.2%)</td>
+<td>57 (23.9%)</td>
+<td>462 (15.9%)</td>
+<td>155 (19.6%)</td>
+<td>316 (21.1%)</td>
+<td>3222 (26.5%)</td>
+<td>599 (28.5%)</td>
+<td>299 (27.0%)</td>
+<td>432 (24.0%)</td>
+<td>412 (23.0%)</td>
+<td>468 (29.3%)</td>
+<td>281 (14.3%)</td>
+<td>60495 (28.3%)</td>
+</tr>
+<tr>
+<td class="rowlabel lastrow">No</td>
+<td class="lastrow">9632 (68.5%)</td>
+<td class="lastrow">704 (71.9%)</td>
+<td class="lastrow">26 (72.2%)</td>
+<td class="lastrow">36 (81.8%)</td>
+<td class="lastrow">181 (76.1%)</td>
+<td class="lastrow">2450 (84.1%)</td>
+<td class="lastrow">634 (80.4%)</td>
+<td class="lastrow">1183 (78.9%)</td>
+<td class="lastrow">8938 (73.5%)</td>
+<td class="lastrow">1503 (71.5%)</td>
+<td class="lastrow">809 (73.0%)</td>
+<td class="lastrow">1369 (76.0%)</td>
+<td class="lastrow">1376 (77.0%)</td>
+<td class="lastrow">1132 (70.8%)</td>
+<td class="lastrow">1688 (85.7%)</td>
+<td class="lastrow">152933 (71.7%)</td>
+</tr>
+<tr>
+<td class="rowlabel firstrow">Some College/Associates Degree</td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+</tr>
+<tr>
+<td class="rowlabel">Yes</td>
+<td>4290 (30.5%)</td>
+<td>246 (25.1%)</td>
+<td>8 (22.2%)</td>
+<td>17 (38.6%)</td>
+<td>92 (38.7%)</td>
+<td>430 (14.8%)</td>
+<td>209 (26.5%)</td>
+<td>311 (20.7%)</td>
+<td>2579 (21.2%)</td>
+<td>563 (26.8%)</td>
+<td>247 (22.3%)</td>
+<td>339 (18.8%)</td>
+<td>442 (24.7%)</td>
+<td>436 (27.3%)</td>
+<td>527 (26.8%)</td>
+<td>59678 (28.0%)</td>
+</tr>
+<tr>
+<td class="rowlabel lastrow">No</td>
+<td class="lastrow">9777 (69.5%)</td>
+<td class="lastrow">733 (74.9%)</td>
+<td class="lastrow">28 (77.8%)</td>
+<td class="lastrow">27 (61.4%)</td>
+<td class="lastrow">146 (61.3%)</td>
+<td class="lastrow">2482 (85.2%)</td>
+<td class="lastrow">580 (73.5%)</td>
+<td class="lastrow">1188 (79.3%)</td>
+<td class="lastrow">9581 (78.8%)</td>
+<td class="lastrow">1539 (73.2%)</td>
+<td class="lastrow">861 (77.7%)</td>
+<td class="lastrow">1462 (81.2%)</td>
+<td class="lastrow">1346 (75.3%)</td>
+<td class="lastrow">1164 (72.8%)</td>
+<td class="lastrow">1442 (73.2%)</td>
+<td class="lastrow">153750 (72.0%)</td>
+</tr>
+<tr>
+<td class="rowlabel firstrow">Bachelor&#39;s Degree or Higher</td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+</tr>
+<tr>
+<td class="rowlabel">Yes</td>
+<td>3229 (23.0%)</td>
+<td>280 (28.6%)</td>
+<td>11 (30.6%)</td>
+<td>11 (25.0%)</td>
+<td>41 (17.2%)</td>
+<td>1447 (49.7%)</td>
+<td>385 (48.8%)</td>
+<td>533 (35.6%)</td>
+<td>1578 (13.0%)</td>
+<td>481 (22.9%)</td>
+<td>345 (31.1%)</td>
+<td>256 (14.2%)</td>
+<td>680 (38.0%)</td>
+<td>364 (22.8%)</td>
+<td>1029 (52.3%)</td>
+<td>69833 (32.7%)</td>
+</tr>
+<tr>
+<td class="rowlabel lastrow">No</td>
+<td class="lastrow">10838 (77.0%)</td>
+<td class="lastrow">699 (71.4%)</td>
+<td class="lastrow">25 (69.4%)</td>
+<td class="lastrow">33 (75.0%)</td>
+<td class="lastrow">197 (82.8%)</td>
+<td class="lastrow">1465 (50.3%)</td>
+<td class="lastrow">404 (51.2%)</td>
+<td class="lastrow">966 (64.4%)</td>
+<td class="lastrow">10582 (87.0%)</td>
+<td class="lastrow">1621 (77.1%)</td>
+<td class="lastrow">763 (68.9%)</td>
+<td class="lastrow">1545 (85.8%)</td>
+<td class="lastrow">1108 (62.0%)</td>
+<td class="lastrow">1236 (77.3%)</td>
+<td class="lastrow">940 (47.7%)</td>
+<td class="lastrow">143595 (67.3%)</td>
+</tr>
+<tr>
+<td class="rowlabel firstrow">No Health Insurance</td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+</tr>
+<tr>
+<td class="rowlabel">Yes</td>
+<td>1350 (9.6%)</td>
+<td>94 (9.6%)</td>
+<td>3 (8.3%)</td>
+<td>6 (13.6%)</td>
+<td>33 (13.9%)</td>
+<td>132 (4.5%)</td>
+<td>16 (2.0%)</td>
+<td>127 (8.5%)</td>
+<td>2383 (19.6%)</td>
+<td>132 (6.3%)</td>
+<td>123 (11.1%)</td>
+<td>411 (22.8%)</td>
+<td>252 (14.1%)</td>
+<td>236 (14.8%)</td>
+<td>88 (4.5%)</td>
+<td>13547 (6.3%)</td>
+</tr>
+<tr>
+<td class="rowlabel lastrow">No</td>
+<td class="lastrow">12717 (90.4%)</td>
+<td class="lastrow">885 (90.4%)</td>
+<td class="lastrow">33 (91.7%)</td>
+<td class="lastrow">38 (86.4%)</td>
+<td class="lastrow">205 (86.1%)</td>
+<td class="lastrow">2780 (95.5%)</td>
+<td class="lastrow">773 (98.0%)</td>
+<td class="lastrow">1372 (91.5%)</td>
+<td class="lastrow">9777 (80.4%)</td>
+<td class="lastrow">1970 (93.7%)</td>
+<td class="lastrow">985 (88.9%)</td>
+<td class="lastrow">1390 (77.2%)</td>
+<td class="lastrow">1536 (85.9%)</td>
+<td class="lastrow">1364 (85.3%)</td>
+<td class="lastrow">1881 (95.5%)</td>
+<td class="lastrow">199881 (93.7%)</td>
+</tr>
+<tr>
+<td class="rowlabel firstrow">Limited English Proficiency</td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+</tr>
+<tr>
+<td class="rowlabel">Mean (SD)</td>
+<td>0.00583 (0.0761)</td>
+<td>0.0531 (0.224)</td>
+<td>0.0556 (0.232)</td>
+<td>0 (0)</td>
+<td>0 (0)</td>
+<td>0.262 (0.440)</td>
+<td>0.0811 (0.273)</td>
+<td>0.125 (0.331)</td>
+<td>0.118 (0.322)</td>
+<td>0.0923 (0.290)</td>
+<td>0.217 (0.412)</td>
+<td>0.204 (0.403)</td>
+<td>0.187 (0.390)</td>
+<td>0.0694 (0.254)</td>
+<td>0.0665 (0.249)</td>
+<td>0.0276 (0.164)</td>
+</tr>
+<tr>
+<td class="rowlabel lastrow">Median [Min, Max]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 0]</td>
+<td class="lastrow">0 [0, 0]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+</tr>
+<tr>
+<td class="rowlabel firstrow">Not a U.S. Citizen</td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+<td class="firstrow"></td>
+</tr>
+<tr>
+<td class="rowlabel">Mean (SD)</td>
+<td>0.0175 (0.131)</td>
+<td>0.195 (0.396)</td>
+<td>0.167 (0.378)</td>
+<td>0.0227 (0.151)</td>
+<td>0.00420 (0.0648)</td>
+<td>0.232 (0.422)</td>
+<td>0.226 (0.418)</td>
+<td>0.197 (0.398)</td>
+<td>0.279 (0.449)</td>
+<td>0.00999 (0.0995)</td>
+<td>0.162 (0.369)</td>
+<td>0.383 (0.486)</td>
+<td>0.271 (0.444)</td>
+<td>0.134 (0.340)</td>
+<td>0.176 (0.381)</td>
+<td>0.0465 (0.211)</td>
+</tr>
+<tr>
+<td class="rowlabel lastrow">Median [Min, Max]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+<td class="lastrow">0 [0, 1.00]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>

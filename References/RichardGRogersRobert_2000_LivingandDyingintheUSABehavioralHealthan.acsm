@@ -1,0 +1,37 @@
+<fulfillmentToken fulfillmentType="loan" auth="user" xmlns="http://ns.adobe.com/adept">
+  <distributor>urn:uuid:501e16ca-f45c-4a0c-9a9f-8a270a9f2ed6</distributor>
+  <operatorURL>http://rps2images.ebscohost.com/fulfillment</operatorURL>
+  <transaction>s5896021:24585810:205649:1638565825692:1196400372</transaction>
+  <expiration>2021-12-03T22:10:25-05:00</expiration>
+  <resourceItemInfo>
+    <resource>urn:uuid:0716e126-5114-4134-ad75-90f9b795fb09</resource>
+    <resourceItem>1</resourceItem>
+    <metadata>
+      <dc:title xmlns:dc="http://purl.org/dc/elements/1.1/">Living and Dying in the USA</dc:title>
+      <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Rogers, Richard G.,Hummer, Robert A.,Nam, Charles B.</dc:creator>
+      <dc:publisher xmlns:dc="http://purl.org/dc/elements/1.1/">Elsevier LTD.</dc:publisher>
+      <dc:format xmlns:dc="http://purl.org/dc/elements/1.1/">application/pdf</dc:format>
+      <dc:language xmlns:dc="http://purl.org/dc/elements/1.1/">eng</dc:language>
+    </metadata>
+    <licenseToken>
+      <resource>urn:uuid:0716e126-5114-4134-ad75-90f9b795fb09</resource>
+      <permissions>
+        <display>
+          <until>2021-12-24T16:10:25-05:00</until>
+        </display>
+        <excerpt>
+          <until>2021-12-24T16:10:25-05:00</until>
+          <count initial="40"/>
+        </excerpt>
+        <print>
+          <until>2021-12-24T16:10:25-05:00</until>
+          <count initial="40"/>
+        </print>
+        <play>
+          <until>2021-12-24T16:10:25-05:00</until>
+        </play>
+      </permissions>
+    </licenseToken>
+  </resourceItemInfo>
+  <hmac>A+UHjET8QYL3KmaCtoPGB+1//Gs=</hmac>
+</fulfillmentToken>
